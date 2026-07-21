@@ -19,7 +19,8 @@ export type InteractiveName =
   | 'wkv-stepper'
   | 'time-mixing-lab'
   | 'loss-curve-sim'
-  | 'tokenizer-demo';
+  | 'tokenizer-demo'
+  | 'rosa-playground';
 
 export interface QuizOption {
   text: string;          // 支持 $...$ 行内公式

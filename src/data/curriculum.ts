@@ -12,10 +12,11 @@ import { ch09 } from './chapters/ch09';
 import { ch10 } from './chapters/ch10';
 import { ch11 } from './chapters/ch11';
 import { ch12 } from './chapters/ch12';
+import { ch13 } from './chapters/ch13';
 
 /** 全部章节（顺序即学习顺序）。新增章节：在 chapters/ 下建文件后在此注册。 */
 export const CURRICULUM: Chapter[] = [
-  ch00, ch01, ch02, ch03, ch04, ch05, ch06, ch07, ch08, ch09, ch10, ch11, ch12,
+  ch00, ch01, ch02, ch03, ch04, ch05, ch06, ch07, ch08, ch09, ch10, ch11, ch12, ch13,
 ];
 
 /** lessonId → (chapter, lesson) 索引 */

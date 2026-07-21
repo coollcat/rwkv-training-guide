@@ -3,7 +3,7 @@ import { CURRICULUM, TOTAL_LESSONS } from '@/data/curriculum';
 import { useProgressCtx } from '@/hooks/ProgressContext';
 import { ArrowRight, BookOpen, CheckCircle2, FlaskConical, Library, Sparkles } from 'lucide-react';
 
-const STAGES = ['数学地基', '机器学习内功', '序列与注意力', 'RWKV 理论', '工程实战'];
+const STAGES = ['数学地基', '机器学习内功', '序列与注意力', 'RWKV 理论', '工程实战', '前沿视野'];
 
 export default function Home() {
   const progress = useProgressCtx();

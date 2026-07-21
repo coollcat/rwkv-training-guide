@@ -11,6 +11,7 @@ import WKVStepper from './WKVStepper';
 import TimeMixingLab from './TimeMixingLab';
 import LossCurveSim from './LossCurveSim';
 import TokenizerDemo from './TokenizerDemo';
+import RosaPlayground from './RosaPlayground';
 
 /** 交互组件注册表：内容数据里的 name → 组件 */
 export const INTERACTIVES: Record<InteractiveName, React.ComponentType> = {
@@ -26,4 +27,5 @@ export const INTERACTIVES: Record<InteractiveName, React.ComponentType> = {
   'time-mixing-lab': TimeMixingLab,
   'loss-curve-sim': LossCurveSim,
   'tokenizer-demo': TokenizerDemo,
+  'rosa-playground': RosaPlayground,
 };

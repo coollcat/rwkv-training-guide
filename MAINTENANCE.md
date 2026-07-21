@@ -31,7 +31,7 @@ app/
     │   └── interactives/
     │       ├── registry.tsx        ← ★ 交互组件注册表（name → 组件）
     │       ├── plot-utils.ts       ← 共享绘图/数值工具
-    │       └── *.tsx               ← 12 个交互实验室组件
+    │       └── *.tsx               ← 13 个交互实验室组件（含 RosaPlayground）
     ├── hooks/
     │   ├── useProgress.ts          ← 进度持久化（localStorage）
     │   └── ProgressContext.ts      ← 全局进度上下文
