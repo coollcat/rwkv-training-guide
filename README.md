@@ -30,6 +30,4 @@ npm install
 npm run dev
 ```
 
-## 部署
 
-已部署在 `http://101.33.224.123:8803`

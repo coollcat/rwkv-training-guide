@@ -30,6 +30,4 @@ npm install
 npm run dev
 ```
 
-## Deployed
 
-`http://101.33.224.123:8803`
