@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+# RWKV 训练全攻略 — 交互式学习指南
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> [中文](README.md) · [English](README_EN.md)
 
-Currently, two official plugins are available:
+从零基础到能手搓 RWKV 训练框架的渐进式学习阶梯。每个公式都配一个交互式实验室。
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 课程体系（14 章 · 50+ 课时）
 
-## React Compiler
+| 阶段 | 章节 | 内容 |
+|------|------|------|
+| **数学地基** | 线性代数 · 微积分 · 概率论 | 矩阵运算、梯度、分布 |
+| **机器学习内功** | 优化 · 奠基网络 | SGD、反向传播、RNN/LSTM |
+| **序列与注意力** | Seq2Seq · Attention · Transformer | 自注意力、多头、位置编码 |
+| **RWKV 理论** | 架构全解 · TimeMix · WKV | RWKV 核心创新 |
+| **工程实战** | 训练框架 · 数据 · 分布式 | 从零写训练代码 |
+| **前沿视野** | 论文精读 · 未来方向 | 最新研究追踪 |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 交互实验室
 
-## Expanding the ESLint configuration
+12 个可操作的可视化实验室：梯度下降模拟、注意力热力图、RNN 展开、WKVS 逐步计算、Tokenizer 演示……
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 技术栈
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+React 19 + TypeScript + Vite 7 + Tailwind CSS + shadcn/ui + KaTeX
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 快速开始
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 部署
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+已部署在 `http://101.33.224.123:8803`
